@@ -1,0 +1,5 @@
+global:
+  postgresql:
+    postgresPassword: nestjs
+    username: ilovecoffee
+    password: ilovecoffee
