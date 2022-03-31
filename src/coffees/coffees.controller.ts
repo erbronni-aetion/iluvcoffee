@@ -14,9 +14,13 @@ import { CreateCoffeeDto } from './dto/create-coffee.dto';
 import { UpdateCoffeeDto } from './dto/update-coffee.dto';
 import { PaginationQueryDto } from '../common/dto/pagination-query.dto';
 
+let count = 0;
+
 @Controller('coffees')
 export class CoffeesController {
-  constructor(private readonly coffeesService: CoffeesService) {}
+  constructor(private readonly coffeesService: CoffeesService) {
+    console.log(`CoffeeController #${++count}`);
+  }
 
   @Get()
   finadAll(@Query() paginationQuery: PaginationQueryDto) {
