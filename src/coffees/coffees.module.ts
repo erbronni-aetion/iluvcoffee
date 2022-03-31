@@ -13,7 +13,7 @@ export class CoffeeBrandsFactory {
     return new Promise((resolve) => {
       setTimeout(
         () => resolve(['folgers', 'maxwell house', 'startbucks']),
-        100,
+        0,
       );
     });
   }
